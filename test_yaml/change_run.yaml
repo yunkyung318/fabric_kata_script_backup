@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: fabric-operator-d67f7b4d6-l55vs  # 변경할 Pod의 이름
+  namespace: test-network
+spec:
+  containers:
+  - name: fabric-operator-container
+    image: fabric-operator-image:tag  # 현재 사용 중인 이미지 또는 변경할 이미지
+  runtimeClassName: kata  # 변경할 runtimeClassName
+
